@@ -4,10 +4,10 @@
  ***********************************/
 #include <iostream>
 using namespace std;
-class list;
+class List;
 
 class Node
-{ friend list;
+{ friend List;
   public:
     Node(string argf="",string argl="",int arga=0);  // Default constructor
     ~Node();                                         // Destructor 
@@ -25,7 +25,3 @@ class Node
 };
 
 typedef Node * node_ptr;
-
-class Node
-{
-};
