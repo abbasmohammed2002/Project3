@@ -5,6 +5,11 @@ using namespace std;
 #include <assert.h> 
 #include "Node.h"
 
+Node::Node(string argf, string argl, int arga)
+{
+
+}
+
 Node::~Node() {
 	if (!next)
 	{
@@ -43,3 +48,39 @@ void Node::insert(Node* p)
 	assert(!p);
 	next = p;
 }
+
+bool Node::operator==(const Node& b)
+{
+	if (last == b.last && first == b.first)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool Node::operator<(const Node& b)
+{
+	if (last == b.last && first == b.first)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool Node::operator>(const Node& b)
+{
+	if (last == b.last && first == b.first)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
