@@ -7,7 +7,10 @@ using namespace std;
 
 Node::Node(string argf, string argl, int arga)
 {
-
+	first = argf;
+	last = argl;
+	age = arga;
+	next = nullptr;
 }
 
 Node::~Node() {

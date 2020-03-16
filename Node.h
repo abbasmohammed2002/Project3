@@ -2,6 +2,7 @@
  * Node declaration
  * DO NOT CHANGE
  ***********************************/
+#pragma once
 #include <iostream>
 using namespace std;
 class List;
